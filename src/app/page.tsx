@@ -1,7 +1,9 @@
+import Link from "next/link"
+
 export default async function Home() {
-  const response = await fetch('https://api.chucknorris.io/jokes/random');
-  const data = await response.json();
   return (
-    <div>{data.value}</div>
-  );
-};
+    <div>
+      <Link href="/blog">Blog</Link>
+    </div>
+  )
+}
